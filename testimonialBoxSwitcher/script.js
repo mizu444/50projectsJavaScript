@@ -1,4 +1,3 @@
-const testimonialContainer = document.querySelector(".testimonial-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
 const username = document.querySelector(".username");
@@ -68,11 +67,11 @@ function updateTestimonial() {
   username.innerHTML = name;
   role.innerHTML = position;
 
-  idx++
+  idx++;
 
-  if(idx > testimonials.length - 1) {
-      idx = 0
+  if (idx > testimonials.length - 1) {
+    idx = 0;
   }
 }
 
-setInterval(updateTestimonial, 10000)
+setInterval(updateTestimonial, 10000);
